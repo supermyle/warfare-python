@@ -17,10 +17,10 @@ def pickBox():
     print("Box1 Box2 Box3")
     print("Pick a Box that you think the enemy is hiding behind")
     print("Enter 1, 2, or 3")
-    guess = input()
+    guess = int(input())
     while guess < 1 or guess > 3:
         print("Enter 1, 2, or 3")
-        guess = input()
+        guess = int(input())
     print("Thank you for your selection")
     if guess == answer:
         print("\n\n********You killed an enemy*******\n\n")
